@@ -6,9 +6,9 @@ import mindustry.game.*;
 import mindustry.game.EventType.*;
 import mindustry.mod.*;
 
-public class ItemBridgeX extends Mod{
+public class ItemBridgeX extends Mod {
 
-    public ItemBridgeX(){
+    public ItemBridgeX() {
         Events.on(EventType.ClientLoadEvent.class, e -> Renderer.init());
         Events.on(EventType.WorldLoadEvent.class, e -> Renderer.load());
         Events.run(Trigger.draw, Renderer::draw);
